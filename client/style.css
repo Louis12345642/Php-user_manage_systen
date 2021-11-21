@@ -1,0 +1,317 @@
+body {
+  font-size: 15pt;
+  background: #414146;
+}
+
+* {
+  margin-left: 0
+}
+
+header {
+  height: 270px;
+  width: 98%;
+  background: #284b63;
+  margin: 20px 20px 0px 20px;
+  border-radius: 5px;
+
+  box-shadw: inset 10px 10px 5px,
+    inset -10px -10px 5px ;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 2.7em;
+  margin-top: 10px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 50px;
+  font-weight:800;
+  color:#ffffff;
+  height: 150px;
+  width: 150px;
+  background:#284b63;
+  border-radius: 50px;
+  margin: 20px 360px;
+  box-shadw: inset 10px 10px 5px , inset -10px -10px 5px ;
+}
+
+.display {
+  width: 98%;
+  height: 960px;
+  background: #6EFFCE;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+  margin: 0 20px 20px 0;
+}
+form{
+  background:#ffffff;
+  height:700px;
+  width:50%;
+  margin-left:25%;
+  border-radius:15px;
+  float: left;
+
+  justify-content: center
+
+
+}
+form label{
+  text-align: center;
+  display: flex;
+  font-size: 2.0em;
+  margin-top:10px;
+  margin-left:10px;
+  font-weight:800;
+}
+table tbody{
+   background-color:#51643D;
+   color:white;
+}
+table tbody button{
+    width:40px;
+    height: 40px;
+    border-radius:5px;
+    background-color:red;
+    color:white;
+    border-style:none;
+}
+table tbody a{
+    color:white;
+}
+    
+form input{
+  height:50px;
+  width:70%;
+  border:5px rgba(200,200,200,0.3)solid ;
+  background:#D7D7D7;
+  border-radius:8px;
+  margin-top: 30px;
+  font-size: 1.5em;
+
+}
+form button{
+  width:70%;
+  margin:20px 0 0 0;
+  height:60px;
+  background:#000000;
+  color: white;
+  border-radius:10px;
+  font-size: 1.5em;
+}
+.text{
+  color:#ffffff;
+  background:#284b63;
+  height: 100px;
+  width:250px;
+  margin-left:30%;
+  text-align:center;
+  font-size:2.0em;
+  border-top-left-radius:5px;
+  border-top-right-radius: 5px;
+}
+.text p{
+  margin: 10px 0 0 0;
+}
+.lin{
+  margin-left:10%;
+  margin-right:3px;
+  background:#284b63;
+  height:10px;
+  width: 350px;
+}
+ .btn:hover{
+ background:#284b63;
+}
+input:hover{
+  border:1px rgba(0,0,250,0.9) solid;
+}
+footer{
+  width:100%;
+  height:500px;
+  background:#20211E;
+  padding-right:21px;
+  margin-top:0;
+  color:#ffffff;
+  text-align: center;
+  font-size:1.5em;
+  position:static;
+  margin-left:0;
+
+
+
+
+}
+footer button{
+
+  width:70%;
+  margin:20px 0 0 0;
+  height:70px;
+  background:#299C2B;
+  border-radius:10px;
+  font-size: 1.2em;
+  border-style:none;
+}
+.link{
+  color:#ffffff;
+  text-decoration:none;
+}
+.btnlink:hover{
+  background:#284b63;
+}
+span{
+  height:20px;
+  width:30px;
+  font-size:2.5em;
+}
+.teble{
+  width:50%;
+  margin-left:25%;
+  border-radius:15px;
+  float: left;
+  justify-content: center;
+  border-radius:5px;
+  border-style:none;
+}
+.X{
+  background:red;
+}
+@media screen and (max-width:480px){
+#head{
+  height: 100px;
+  width: 340px;
+  background: #284b63;
+  margin: 10px 10px 0 10px;
+  border-radius: 5px;
+
+}
+#hside{
+  font-size:1.0em;
+}
+#Logo{
+  text-align: center;
+  font-size: 30px;
+  font-weight:800;
+  color:#ffffff;
+  height: 10px;
+  width: 10px;
+  background:#284b63;
+  border-radius: 5px;
+  margin: 7px 170px;
+}
+#Text{
+
+  height: 50px;
+  width:100px;
+  margin-left:20px;
+  text-align:center;
+  font-size:13px;
+
+}
+#Text p{
+    margin-left:20px;
+}
+#Lin{
+  margin-left:20px;
+  margin-right:3px;
+  height:5px;
+  width: 250px;
+  font-size:20px;
+}
+#Display{
+  width:340px;
+  height:600px;
+  margin-right:10px;
+  margin-left:10px;
+}
+#Form{
+  height:400px;
+  width:230px;
+  border-radius:15px;
+  justify-content: center;
+  font-size:9px;
+  margin-left:50px;
+}
+#succ{  height:300px;
+  width:230px;
+  border-radius:15px;
+  justify-content: center;
+  font-size:13px;
+  margin-left:50px;
+}
+#succ input{
+    height:20px;
+    width:190px;
+}
+#danger p{
+    color:red;
+}
+.btnSucc{
+  width:100px;
+  margin:20px 0 0 0;
+  height:25px;
+  border-radius:6px;
+  font-size: 10px;
+  border-style:none;
+  color: white;
+}
+.btnSucc a{
+color:white;
+}
+#Form input {
+  height:18px;
+  width:120px;
+  border-radius:3px;
+  margin-top: 10px;
+  font-size:15px;
+}
+#Form button{
+  width:200px;
+  margin:20px 0 0 0;
+  height:30px;
+  border-radius:6px;
+  font-size: 1.0em;
+  border-style:none;
+}
+#Footer{
+  width:350px;
+  height:200px;
+  padding-right:21px;
+  text-align: center;
+  font-size:15px;
+  margin-left:5px;
+  margin-right: 5px;
+padding-bottom:20px;
+}
+#Footer button{
+  width:200px;
+  margin:20px 0 0 0;
+  height:40px;
+  border-radius:10px;
+  font-size: 15px;
+  border-style:none;
+  
+}
+
+#success{
+    width:150px;
+    height:100px;
+    border-radius:10px;
+    background-color:#80FF00;
+    text-align: center;
+    margin:20px,30px,0,30px;
+}
+
+
+#Tablefont th{
+    font-size:15px;
+    
+}
+}
