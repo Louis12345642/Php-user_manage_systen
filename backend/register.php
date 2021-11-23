@@ -122,7 +122,7 @@ mysqli_query($conn,$sql);
               <br/> 
               <br/>
       
-
+//Changes from git
   
               <p id="danger"><? echo($name_error);?></p>
               <p><? echo($age_error); ?></p>
