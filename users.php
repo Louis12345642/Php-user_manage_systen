@@ -1,25 +1,13 @@
 
 <?php
+//Including backend connection of database
+
 include_once('backend/MySQL_conn.php');
+//Selecting users from the database
 $sql="SELECT * FROM user;";
 $result=mysqli_query($conn,$sql);
 $checking=mysqli_num_rows($result);
-//echo($checking);
-if ($checking>0){
-   //$users=mysqli_fetch_assoc($result);
-  // while($users){
-   //print($users['name']."<br/>");
-//}
-//}
-
-//while($Data=mysqli_fetch_assoc($result)){
-   //echo ("<td>$Data['name']</td>");
-   //echo($Data['name']."<br/>");
-//}
-}
-//else{
-    //echo("no user");
-//}
+  
 ?>
 
 <!DOCTYPE html>
@@ -64,23 +52,7 @@ if ($checking>0){
 
           </div>
           <br />
-    <!-- <table class="teble" border="0">
-       <thead>
-         <th>Name</th>
-         <td>Contact</td>
-         <th>Age</th>
-         <th> </th>
-       </thead>
-       <br />
-       <tbody>
-         <tr>
-           <td>Kual </td>
-           <td>00879669</td>
-           <td>senior 3</td>
-           <td class="X">X</td>
-         </tr>
-       </tbody>
-     </table>-->
+          <!--Users table display-->
      
      <table class="table table-striped mt-4">
   <thead id="Tablefont" class="thead-dark">
@@ -94,8 +66,9 @@ if ($checking>0){
   
   <tbody>
 <?php
-
+//Looping through the users from the database
 while($Data=mysqli_fetch_assoc($result)){
+    //
  echo ("<tr><td>{$Data['name']}</td>
   <td>{$Data['email']}</td>
  <td>{$Data['class']}</td>
@@ -103,8 +76,7 @@ while($Data=mysqli_fetch_assoc($result)){
  <td><button><a href='backend/delete.php'>X</a></button></td></tr>");
 
 
-// echo("<tr><td>{$Data['name])}</td></tr>")
-   //echo("</table>");
+
 }
    ?>
   </tbody>

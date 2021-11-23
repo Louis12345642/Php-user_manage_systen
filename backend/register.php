@@ -8,6 +8,14 @@ $contact=$_POST['email'];
 $class=$_POST['class'];
 $age=$_POST['age'];
 $Id=$_POST['id'];
+// Availability of user
+$sql="SELECT * FROM user;";
+$result=mysqli_query($conn,$sql);
+$checking=mysqli_num_rows($result);
+ while($Data=mysqli_fetch_assoc($result)){
+    $AllUsers=$Data['name'];
+     
+ }
 //echo($Id);
 //validation of users
 if(empty($name)){
@@ -35,6 +43,10 @@ elseif(empty($contact)){
  }
  elseif($contact !="$name"."@"."$class"){
      $wrong_email="Enter correct format of email";
+ }
+ elseif($AllUsers==$name){
+     $ExtanceUser="User exist";
+     //feature made successfully
  }
 
 
@@ -120,6 +132,7 @@ mysqli_query($conn,$sql);
         <p><? echo ($wrong_class);?></p>
          <p><? echo ($wrong_email);?></p>
           <p><? echo ($wrong_age);?></p>
+          <p><? echo ($ExtanceUser);?></p>
 
        <button class="btnSucc" ><b><a href="../index.php">Home</a></b> </button>
      </form>

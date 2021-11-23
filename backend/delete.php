@@ -29,6 +29,7 @@ include_once('MySQL_conn.php');
 //include_once('backen/MySQL_conn.php');
 //$Name=$_GET['name'];
 //echo($Name);
+//Deleting form 
 //?>
     
  

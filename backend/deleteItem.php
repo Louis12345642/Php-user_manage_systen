@@ -1,12 +1,29 @@
 <?php
 include_once('MySQL_conn.php');
+//checking Users
+$sql="SELECT * FROM user;";
+$result=mysqli_query($conn,$sql);
+$checkingUser=mysqli_num_rows($result);
+  
+//Handling deleting user using name
 
+
+//checking availability of users
+echo($checkingUser);
+if($checkingUser<1){
+    $MsgUsers="No User to delete in database";
+    
+}
+else{
+  
 $Name=$_GET['name'];
 $sql="DELETE FROM `user`
 WHERE `name` = '$Name';";
+//querry of deleting from database
+$DeletedUser=mysqli_query($conn,$sql);
+$succesMsg="User deleted successful";
+}
 
-mysqli_query($conn,$sql);
-echo($Name);
 ?>
 <DOCTYPE html>
 <html lang="en">
@@ -27,10 +44,6 @@ echo($Name);
 
 <body class="container">
   <header id="head">
-      <?php
-//include_once('backen/MySQL_conn.php');
-
-?>
     
  
 <div>
@@ -66,7 +79,10 @@ echo($Name);
            <br/>
               <br/> 
               <br/>
-       <p>User deleted successful</p>
+              <p> <?
+              echo($MsgUsers);
+              ?></p>
+       <p><? echo($succesMsg);?></p>
        <button class="btnSucc" ><b><a href="../index.php">Home</a></b> </button>
      </form>
    </div>
